@@ -7,11 +7,10 @@
 }
 
 .container{
-    background-color: #333;
-    border: 1px solid blue;
+    background-color: #ffffff;
     padding: 15px;
 }
-.container div{
+.container div top{
     background-color: #ccc;
     border: 1px;
     padding: 20px;
