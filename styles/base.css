@@ -26,12 +26,15 @@ header h1 {
 /* Estilos para o menu de navegação */
 nav {
     background-color: rgb(172, 103, 0); /* Cor de fundo do menu de navegação */
+    display: flex;
+    justify-content: center;
 }
 
 nav ul {
     list-style-type: none; /* Remover marcadores de lista */
     padding: 0; /* Remover espaçamento interno */
     background-color: rgb(172, 103, 0); /* Cor de fundo do menu de navegação */
+    display: flex;
 }
 
 nav ul li {
@@ -46,6 +49,8 @@ nav ul li a {
 
 /* Estilos para o conteúdo principal */
 .main-content {
+    display: flex;
+    flex-direction: column;
     padding: 20px; /* Espaçamento interno do conteúdo principal */
 }
 
