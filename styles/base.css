@@ -8,7 +8,7 @@
 /* Estilos básicos para o corpo do documento */
 body {
     font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
+    line-height: 1.9;
     padding: 20px;
 }
 
@@ -21,18 +21,27 @@ header {
 
 header .h12-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    align-content: center;
+    flex-direction: row;
 }
 
 header h1 {
+    display: flex;
     color: white; /* Cor do texto do título */
+    
+    /*justify-content: center;
+    /*align-items: center;*/
+    /*align-content: center;*/
+    
 }
 
 header h2 {
     color: rgb(247, 172, 12); /* Cor do texto do título */
-    font-size: 1rem;
+    font-size: 0.9rem;
+    margin-left: 20px;
 }
 
 /* Estilos para o menu de navegação */
