@@ -1,0 +1,53 @@
+/* Reset de estilos para garantir uma base consistente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos básicos para o corpo do documento */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Estilos para o cabeçalho */
+  header {
+    background-color: #333; /* Cor de fundo do cabeçalho */
+    padding: 20px 0; /* Espaçamento interno do cabeçalho */
+    text-align: center; /* Centralizar conteúdo do cabeçalho */
+  }
+  
+  header h1 {
+    color: white; /* Cor do texto do título */
+  }
+  
+  /* Estilos para o menu de navegação */
+  nav ul {
+    list-style-type: none; /* Remover marcadores de lista */
+    padding: 0; /* Remover espaçamento interno */
+  }
+  
+  nav ul li {
+    display: inline; /* Exibir itens de lista na mesma linha */
+    margin-right: 20px; /* Espaçamento entre itens de lista */
+  }
+  
+  nav ul li a {
+    text-decoration: none; /* Remover sublinhado dos links */
+    color: white; /* Cor do texto dos links */
+  }
+  
+  /* Estilos para o conteúdo principal */
+  .main-content {
+    padding: 20px; /* Espaçamento interno do conteúdo principal */
+  }
+  
+  /* Estilos para o rodapé */
+  footer {
+    background-color: #333; /* Cor de fundo do rodapé */
+    padding: 20px 0; /* Espaçamento interno do rodapé */
+    text-align: center; /* Centralizar conteúdo do rodapé */
+    color: white; /* Cor do texto do rodapé */
+  }
+  
