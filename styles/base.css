@@ -9,6 +9,7 @@
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    padding: 20px;
   }
   
   /* Estilos para o cabeçalho */
@@ -21,11 +22,14 @@
   header h1 {
     color: white; /* Cor do texto do título */
   }
-  
+  nav{
+    background-color: rgb(172, 103, 0)d;
+  }
   /* Estilos para o menu de navegação */
   nav ul {
     list-style-type: none; /* Remover marcadores de lista */
     padding: 0; /* Remover espaçamento interno */
+    background-color: rgb(172, 103, 0);
   }
   
   nav ul li {
