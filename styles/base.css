@@ -79,8 +79,33 @@ nav a:hover{
 .main-content {
     display: flex;
     flex-direction: column;
-    padding: 20px; /* Espaçamento interno do conteúdo principal */
+    padding: 0 20px; /* Espaçamento interno do conteúdo principal */
+    max-width: 800px;
+    margin: 0 auto;
 }
+/*images CSS */
+.image-container {
+    position: relative;
+    width: 50px; /* Adjust width as needed */
+  }
+
+.text-overlay {
+    position: absolute;
+    top: 50%; /* Position the text in the middle vertically */
+    left: 50%; /* Position the text in the middle horizontally */
+    transform: translate(-50%, -50%); /* Center the text */
+    text-align: center; /* Center-align the text */
+    color: white; /* Text color */
+  }
+  
+.text-overlay h2 {
+    margin-top: 0; /* Remove default margin */
+  }
+  
+.text-overlay p {
+    margin-bottom: 0; /* Remove default margin */
+  }
+  
 
 /* Estilos para o rodapé */
 footer {
