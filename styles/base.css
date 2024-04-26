@@ -15,7 +15,7 @@ body {
 /* Estilos para o cabeçalho */
 header {
     background-color: #333; /* Cor de fundo do cabeçalho */
-    padding: 20px 0; /* Espaçamento interno do cabeçalho */
+    padding: 0px; /* Espaçamento interno do cabeçalho */
     text-align: center; /* Centralizar conteúdo do cabeçalho */
 }
 
@@ -46,15 +46,16 @@ header h2 {
 
 /* Estilos para o menu de navegação */
 nav {
-    background-color: rgb(172, 103, 0); /* Cor de fundo do menu de navegação */
+    background-color: rgb(247, 172, 12); /* Cor de fundo do menu de navegação */
     display: flex;
     justify-content: center;
+    padding: 5px;
 }
 
 nav ul {
     list-style-type: none; /* Remover marcadores de lista */
     padding: 0; /* Remover espaçamento interno */
-    background-color: rgb(172, 103, 0); /* Cor de fundo do menu de navegação */
+    background-color: rgb(247, 172, 12); /* Cor de fundo do menu de navegação */
     display: flex;
 }
 
@@ -65,7 +66,13 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none; /* Remover sublinhado dos links */
-    color: white; /* Cor do texto dos links */
+    color: rgb(12, 0, 0); /* Cor do texto dos links */
+}
+
+nav a:hover{
+    color: white;
+    text-decoration:none;
+    transition: color 0.3 ease;
 }
 
 /* Estilos para o conteúdo principal */
