@@ -14,17 +14,25 @@ body {
 
 /* Estilos para o cabeçalho */
 header {
-    
+    background-color: #333; /* Cor de fundo do cabeçalho */
     padding: 20px 0; /* Espaçamento interno do cabeçalho */
     text-align: center; /* Centralizar conteúdo do cabeçalho */
+}
+
+header .h12-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 header h1 {
     color: white; /* Cor do texto do título */
 }
 
-header .h1-content{
-    background-color: #333; /* Cor de fundo do cabeçalho */
+header h2 {
+    color: rgb(247, 172, 12); /* Cor do texto do título */
+    font-size: 1rem;
 }
 
 /* Estilos para o menu de navegação */
