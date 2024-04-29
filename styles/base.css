@@ -1,123 +1,141 @@
-/* Reset de estilos para garantir uma base consistente */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilos básicos para o corpo do documento */
 body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.9;
-    padding: 50px;
+    font-family: poppins, sans-serif;
+    margin: 0;
+    margin-top: -1.5rem;
+    background-color: white;
+    padding: 15px;
 }
 
-/* Estilos para o cabeçalho */
 header {
-    background-color: #333; /* Cor de fundo do cabeçalho */
-    padding: 0px; /* Espaçamento interno do cabeçalho */
-    text-align: center; /* Centralizar conteúdo do cabeçalho */
-}
-
-header .h12-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
 }
 
 header h1 {
+    padding: .8rem;
+    text-align: center;
+    font-size: larger;
+}
+
+img {
+    float: right;
+    margin-top: -20px;
+    margin-right: 15px;
+    height: auto;
+    width: 100px;
+}
+
+.h3line {
     display: flex;
-    color: white; /* Cor do texto do título */
-    
-    /*justify-content: center;
-    /*align-items: center;*/
-    /*align-content: center;*/
-    
-}
-
-header h2 {
-    color: rgb(247, 172, 12); /* Cor do texto do título */
-    font-size: 0.9rem;
-    margin-left: 20px;
-}
-
-/* Estilos para o menu de navegação */
-nav {
-    background-color: rgb(247, 172, 12); /* Cor de fundo do menu de navegação */
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-}
-
-nav ul {
-    list-style-type: none; /* Remover marcadores de lista */
-    padding: 0; /* Remover espaçamento interno */
-    background-color: rgb(247, 172, 12); /* Cor de fundo do menu de navegação */
-    display: flex;
-}
-
-nav ul li {
-    display: inline; /* Exibir itens de lista na mesma linha */
-    margin-right: 20px; /* Espaçamento entre itens de lista */
-}
-
-nav ul li a {
-    text-decoration: none; /* Remover sublinhado dos links */
-    color: rgb(12, 0, 0); /* Cor do texto dos links */
-}
-
-nav a:hover{
-    color: white;
-    text-decoration:none;
-    transition: color 0.3 ease;
-}
-
-/* Estilos para o conteúdo principal */
-.main-content {
-    display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    padding: 0 20px; /* Espaçamento interno do conteúdo principal */
-    max-width: 800px;
+    text-align: center;
+    border-bottom: 2px solid rgb(36, 155, 12);
+    width: 180px;
     margin: 0 auto;
 }
 
+.flagimg {
+    text-align: center;
+}
 
-/*images CSS */
+.dev-card .left-image {
+    float: left;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
 
-  .image-container{
-    width: 550px;
-    height: auto;
-  }
+.menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffbf48;
+    align-items: center;
+    padding-right: 2rem;
+}
 
-  img{
-    width: 150px;
-    height: auto;
-  }
+.menu li {
+    flex: 1 1 auto;
+}
 
-  
-  .text-overlay {
-    position: absolute;
-    top: 50%; /* Position the text in the middle vertically */
-    left: 50%; /* Position the text in the middle horizontally */
-    transform: translate(-50%, -50%); /* Center the text */
-    text-align: center; /* Center-align the text */
-    color: white; /* Text color */
-  }
-  
-  .text-overlay h2 {
-    margin-top: 0; /* Remove default margin */
-  }
-  
-  .text-overlay p {
-    margin-bottom: 0; /* Remove default margin */
-  }
-/* Estilos para o rodapé */
+.menu a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-weight: 1;
+    font-size: large;
+    color: white;
+}
+
+.menu a:hover {
+    font-weight: 800;
+    font-size: medium;
+    color: #0f0e0e;
+}
+
+.main-box {
+    display: grid;
+    max-width: 1800px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.dev-card {
+    border: 1px solid #ffbf48;
+    border-radius: 15px;
+}
+
+.dev-card:nth-child(1) {
+    grid-column: 1/3;
+    margin-right: 1rem;
+}
+
+.dev-card {
+    grid-column: 3/4;
+}
+
+.title {
+    background-color: #ffbf48;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    border-radius: 12px 12px 0 0;
+    color: #ffffff;
+}
+
+.content {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.p2 {
+    padding: 20px;
+    font-size: small;
+}
+
+div {
+    grid-column: 1/2;
+}
+
+div h2 {
+    grid-column: 1/3;
+    margin-top: 5px;
+}
+
+.content {
+    grid-column: 2/3;
+}
+
 footer {
-    background-color: #333; /* Cor de fundo do rodapé */
-    padding: 20px 0; /* Espaçamento interno do rodapé */
-    text-align: center; /* Centralizar conteúdo do rodapé */
-    color: white; /* Cor do texto do rodapé */
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
