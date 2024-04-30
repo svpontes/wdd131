@@ -1,0 +1,25 @@
+/* mobile.css */
+body {
+    font-size: 16px;
+    /* Other mobile styles */
+}
+
+header, main, footer{
+
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #424141;
+    padding: 1rem;
+    background-color: rgb(3, 215, 243);
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+section{
+    padding: 1rem;
+    background-color: white;
+}
