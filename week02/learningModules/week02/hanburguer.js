@@ -7,3 +7,4 @@ document.addEventListener("DOMContentLoaded", function() {
         hamButton.classList.toggle('open');
     });
 });
+

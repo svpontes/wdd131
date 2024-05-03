@@ -1,88 +1,82 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: poppins, sans-serif;
 }
 
 h1 {
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
-    margin-left: 1rem;
+	text-align: left;
+	font-family: times, serif;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+    font-family: poppins, sans-serif;
 }
 
 h2 {
-    font-size: 1.2rem;
-    color: navy;
-    text-align: left;
-    margin: 1rem;
-}
+		font-size: 1.2rem;
+		color: #159fd6;
+		text-align: left;
+		margin: 1rem;
+        text-align: center;
+        
+	}
 
 nav {
-    max-width: 700px;
-    margin: 1rem auto;
+	max-width: 700px;
+	margin: 1rem auto;
+    justify-content: center;
 }
 
 /* small view navigation */
 #menu {
-    font-size: 1.5rem;
-    border: 0;
-    background: none;
-    color: #000;
-    position: absolute; /* Defina a posição absoluta */
-    top: 1rem; /* Posicione 1rem do topo */
-    right: 1rem; /* Posicione 1rem da direita */
-    cursor: pointer; /* Adicione cursor pointer */
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	position: absolute; /* Defina a posição absoluta */
+	top: 1rem; /* Posicione 1rem do topo */
+	right: 1rem; /* Posicione 1rem da direita */
+	cursor: pointer; /* Adicione cursor pointer */
 }
 
 #menu::before {
-    content: "☰";
+	content: "☰";
 }
 
 #menu.open::before {
-    content: "❎";
+	content: "X";
 }
 
 .navigation {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    background-color: #333;
-    color: #fff;
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	color: #ffffff;
+	background-color:rgb(0, 0, 0);
 }
 
 .navigation a {
-    display: none;
-    padding: 1rem;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
 }
-
 .navigation a:hover {
-    background-color: #bbb;
-    color: #333;
-    font-weight: 700;
+	background-color: #159fd6;
+	color: #ffffff; 
+	font-weight: 700;
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
-    display: block;
+	display: block;
 }
 
 .active::before {
-    content: "📍";  /* just a wayfinding symbol for the user */
+	content: "📍";  /* just a wayfinding symbol for the user */
 }
 
-.stuff {
-    margin: .5m;
-    border: 1px solid rgba(0,0,0,.1);
-    background-color: #bed;
-    max-width: 580px;
-    height: 100vh;
-}
-
-/* Responsive layout for figure elements */
 main {
     display: flex;
     flex-wrap: wrap;
@@ -96,18 +90,55 @@ figure {
     text-align: center;
 }
 
+
+    
 figure img {
     width: 100%;
-    height: auto;
-}
+    height: 200px; /* Defina a altura desejada */
+    object-fit: cover; /* Garante que as imagens mantenham a proporção e se ajustem ao contêiner */
+ }
+
 
 figcaption {
     margin-top: 10px;
 }
 
-footer {
-    background-color: blue;
+footer{
+    background-color: black;
     color: white;
     text-align: center;
-    padding: 10px 0;
+}
+
+
+
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+	h1 {
+		font-size: 2.5rem;
+		margin-left: 0;
+		text-align: center;
+	}
+	
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+        
+	}
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+        color: black;
+        
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+	
 }
