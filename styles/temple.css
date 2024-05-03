@@ -16,10 +16,9 @@ h1 {
 h2 {
 		font-size: 1.2rem;
 		color: #159fd6;
-		text-align: left;
 		margin: 1rem;
         text-align: center;
-        
+		margin-bottom: 20px;      
 	}
 
 nav {
