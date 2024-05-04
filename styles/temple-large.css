@@ -9,10 +9,15 @@
     }
     
     h2 {
-        font-size: 2rem;
-        text-align: center;
-        
-    }
+		font-size: 1.2rem;
+		color: #159fd6;
+		margin: 1rem;
+	}
+
+    /*.title h2{
+		/*text-align: center; *//* Centraliza o título */
+		/*margin-bottom: 20px; *//* Adiciona margem inferior para separar o título das imagens 
+	}*/
 
     #menu {
         display: none; /* hide hamburger button */
