@@ -1,0 +1,95 @@
+@media screen and (min-width: 740px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+    h1 {
+       
+       padding: 0.5rem 2.5rem;
+       margin: 0.5rem auto;
+    }
+
+    header img{
+
+        width: 70px;
+        height: 60px;
+        margin-top: 0.5rem;
+        margin-left: 2rem;
+    }
+    
+
+    h2 {
+        background-color: var(--secundary);
+        width: 90%;
+    }
+
+    main {
+        position:relative;
+    }
+
+    section {
+        position: absolute;
+        background-color: var(--white-bg);
+        color: var(--dark);
+        margin: 0;
+    }
+
+    .datatable {
+        padding: 1rem 0.5rem;
+        width: 90%;
+        
+    }
+    .row {
+        padding: 0.3rem 0;
+    }
+    .data {
+        top: 2.5rem;
+        left: 5.5rem;
+        padding-top: 1rem;
+        border-radius: 0.5rem;
+    }
+    .card-header {
+        text-align: left;
+        position: relative;
+        width: 100%;
+        left: -10px;
+        
+        
+    }
+
+    h2 {
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+    }
+
+    .weather {
+        bottom: 3rem;
+        right: 2rem;
+        padding-top: 1rem;
+        border-radius: 0.5rem;
+    }
+    .weather .card-header {
+        width: 98%;
+        border-radius: 0.5rem;
+    }
+    .weather h2::after {
+        content: "";
+        display: inline-block;
+        background-image: var(--icon1);
+        background-position: center;
+        height: 60px;
+        width: 60px;
+    }
+    footer {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding-top: 2.7rem;
+       
+    }
+}

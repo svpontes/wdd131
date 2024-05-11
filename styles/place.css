@@ -1,0 +1,100 @@
+:root {
+    --primary: #d81c1c;
+    --secundary: #44f33e;
+    --white: white;
+    --black: #011436;
+
+    --white-bg: #ffffff77;
+    --black-bg: #44f33e;
+
+    --icon1: url('../images/weather-ico.svg');
+    
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    color: var(--black);
+    font-family: "poppins", sans-serif;
+}
+
+header {
+    padding: .5rem;
+    background-color: var(--primary);
+    border-bottom: 2rem solid var(--secundary);
+}
+
+img{
+
+    width: auto;
+    height: auto;
+}
+
+h1 {
+    color: var(--white);
+}
+
+.header {
+    text-align: center;
+   
+}
+
+.hero {
+    height: 75vh;
+    border-bottom: 1rem solid var(--primary);
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+section {
+    text-align: center;
+}
+
+.datatable {
+    padding: 1rem;
+    margin: auto auto;
+    font-size: 15px;
+    
+}
+
+.weather h2::after {
+    content: "";
+    display: flex;
+    background-image: var(--icon1);
+    height: 5rem;
+    width: 5rem;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.row .key {
+    text-align: right;
+    width: 100%;
+}
+.row .value {
+    text-align: left;
+    width: 100%;
+}
+
+footer {
+    background-color: var(--primary);
+    border-bottom: 1.5rem solid var(--secundary);
+    color: var(--white);
+    text-align: center;
+    padding-top: 0.2rem;
+    
+    
+}

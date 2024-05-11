@@ -3,17 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Sergio Pontes</title>
-    <meta name="description" content="The subject of the page is about a country or place where you live or have visited or wish to visit">
+    <meta name="description" content="The subject of the page is about a country or place where you live or have visited or wish to visit.">
     <meta name="author" content="Sergio Pontes">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="./styles/place.css">
-    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="./scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+    <title>Portugal</title>
 </head>
 <body>
     <header>
-        <h1>WDD 131 - Dynamic Web Fundamentals - Sergio Pontes</h1>
-        <nav>
-            
-        </nav>
+        <div class="header">
+            <img src="images/Coat_of_arms_of_Portugal.svg.png" alt="coat of arms of Portugal">
+            <h1>PORTUGAL</h1>
+        </div>
     </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/portugal.webp" media="(min-width: 740px )">
+                <source srcset="images/portugal-smartphone.webp" media="(min-width: 500px )">
+                <img src="images/portugal-smartphone.webp" alt="Lisbon" width="250" height="500">
+            </picture>
+        </div>
+        <section class="data">
+            <div class="card-header">
+                <h2>Data:</h2>
+            </div>
+            <div class="datatable">
+                <div class="row">
+                    <div class="col key">Total Area:</div>
+                    <div class="col value">92 256 km²</div>
+                </div>
+                <div class="row">
+                    <div class="col key">Pop:</div>
+                    <div class="col value">10 million</div>
+                </div>
+                <div class="row">
+                    <div class="col key">Capital:</div>
+                    <div class="col value">Lisbon</div>
+                </div>
+                <div class="row">
+                    <div class="col key">Lang:</div>
+                    <div class="col value">Portuguese</div>
+                </div>
+                <div class="row">
+                    <div class="col key">Currency:</div>
+                    <div class="col value">Euro</div>
+                </div>
+                <div class="row">
+                    <div class="col key">Time Zone:</div>
+                    <div class="col value">UTC -1  0</div>
+                </div>
+                <div class="row">
+                    <div class="col key">Calling Code:</div>
+                    <div class="col value">+359</div>
+                </div>
+                <div class="row">
+                    <div class="col key">Internet TLD:</div>
+                    <div class="col value">.pt</div>
+                </div>
+            </div>
+        </section>
+        <section class="weather">
+            <div class="card-header">
+                <h2>Weather:</h2>
+            </div>
+            <div class="datatable">
+                <div class="row">
+                    <div class="col key">Temperature:</div>
+                    <div class="col value" id="temp"></div>
+                </div>
+                <div class="row">
+                    <div class="col key">Conditions:</div>
+                    <div class="col value" id="cond"></div>
+                </div>
+                <div class="row">
+                    <div class="col key">Wind:</div>
+                    <div class="col value" id="wind"></div>
+                </div>
+                <div class="row">
+                    <div class="col key">Wind Chill:</div>
+                    <div class="col value" id="windChill"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©️ <span id="currentyear"></span> - Sergio Pontes - Portugal</p>
+        <p> Last Modified: <span id="lastModified"></span> </p>
+    </footer>
+</body>
+</html>
