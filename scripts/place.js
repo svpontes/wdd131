@@ -4,7 +4,7 @@ let wind = 4.8; // km/h
 let cond = "Sunny";
 
 // Função para calcular o fator de resfriamento do vento
-const calculateWindChill = (t, v) => {
+const calculateWindChill = (t, s) => {
     // Coeficientes para o cálculo do fator de resfriamento do vento em Celsius
     const coeficientes = {
         a: 13.12,
@@ -26,7 +26,7 @@ const calculateWindChill = (t, v) => {
     const { a, b, c, d } = coef("c");
 
     // Calcula o fator de resfriamento do vento
-    const result = Math.round((a + b * t) - (c * v ** 0.16) + (d * t * v ** 0.16));
+    const result = Math.round((a + b * t) - (c * s ** 0.16) + (d * t * s** 0.16));
     return result;
 };
 
