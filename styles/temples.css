@@ -12,21 +12,21 @@ h1 {
 	margin-left: 1rem;
     font-family: poppins, sans-serif;
 }
+section h2 {
+	font-size: 1.2rem;
+	color: #159fd6;
+	margin: 1rem;
+	text-align: center;
+	
+}
+
 main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-h2 {
-	font-size: 1.2rem;
-	color: #159fd6;
-	margin: 1rem;
-	text-align: center; /* Centraliza o título */
-	margin-bottom:auto auto;
-	margin: 0 600px;
-	 
-}
+
 
 
 nav {
