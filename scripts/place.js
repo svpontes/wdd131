@@ -1,6 +1,6 @@
 // Definição das variáveis de temperatura, velocidade do vento e condições climáticas
-let temp = 26; // Celsius
-let wind = 5; // km/h
+let temp = 10; // Celsius
+let wind = 4.8; // km/h
 let cond = "Sunny";
 
 // Função para calcular o fator de resfriamento do vento
