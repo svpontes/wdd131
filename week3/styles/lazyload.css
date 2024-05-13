@@ -1,0 +1,45 @@
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.first-image img {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+img:not(.first-image img) {
+    background-color: black;
+    animation: fade 10s;
+    width: 100%;
+    height: auto;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 37.5em) {
+    img:not(.first-image img) {
+        max-width: 90%;
+    }
+    
+}
