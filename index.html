@@ -1,63 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Sergio Pontes</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Sergio Pontes - Home Page">
+    <meta name="description" content="page about Temples of the Church of Jesus Christ Saints of Latter  Days int the world">
     <meta name="author" content="Sergio Pontes">
+    <title>Responsive Navigation</title>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="../wdd131/styles/filtered-temples.css">
+    <link rel="stylesheet" href="../wdd131/styles/filtered-temple-larges.css">
+    
+    <script src="./scripts/getdates.js" defer></script>
+    <script src="./scripts/filtered-temples.js" defer></script>
+   
 </head>
 <body>
     <header>
-        <h1>WDD 131 - Dynamic Web Fundamentals - Sergio Pontes</h1>
-        <nav>
-            <ul class="menu">
-                <li><a href="https://www.linkedin.com/in/pontes-sergio/" target="_blank"> LinkedIn</a></li>
-                <li><a href="https://byui.instructure.com/" target="_blank"> I-Learn</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank"> Scripture</a></li>
-                <li><a href="#"> Final Project</a></li>
+        <h1>Temple Album</h1>
+            <nav>
+                <button id="menu"></button>
+                <ul class="navigation">
+                    <li><a id="home" class="active" href=#>Home</a></li>
+                    <li><a id="Old" href="#">Old</a></li>
+                    <li><a id="New" href="#">New</a></li>
+                    <li><a id="Large" href="#">Large</a></li>
+                    <li><a id="Small" href="#">Small</a></li>
             </ul>
         </nav>
     </header>
-   
-    <main class="main-box">
-        <section class="dev-card">
-            <div class="title">
-                <h2>About Me</h2>
-            </div>
-                <img src="./images/fotopng.png" alt="Profile"> 
-                <p class="p2">"I am passionate about technology. In fact, accomplishing tasks sharpens my curiosity, leading me to pursue learning continuously. I enjoy traveling, much like many of you in the WDD131 class, and immersing myself in diverse cultures. While I was born in Brazil, I currently reside in Portugal, an amazing country. Over the past 15 years, I've had the opportunity to visit countries such as the US, France, Italy, Spain, and the UK. My wife and I have six children, and we cherish spending time together as a family and professionaly I have experience in software quality testing. ."</p>                
-                <h3 class="h3line">Brazil</h3>
-                <div class="flagimg">
-                <img src="./images/flag.jpg" alt="Brazil Flag" class="left-image">
-                </div>
-                <p class="p2">Brazil is the fifth-largest country in the world by land area and the seventh most populous. Its vast territory encompasses diverse landscapes, from the Amazon Rainforest to the stunning beaches of Rio de Janeiro.
-                    The capital of Brazil is Brasília. However, the most populous city is São Paulo, a bustling metropolis known for its cultural diversity, economic prowess, and vibrant nightlife.
-                    Brazil is home to a rich biodiversity and heritage is rich and diverse..
-                    
-        </section>
-        <section class="dev-card">
-            <div class="title">
-                <h4>Web Dev Resources</h4>
-            </div>
-            <div class="content">
-                <ul>
-                    <li><a href="https://fedoraproject.org/workstation/community/" target="_blank">Fedora Community</a></li>
-                    <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
-                    <li><a href="https://developer.mozilla.org/en-US/" target="_blank">Developer Mozilla</a></li>
-                    <li><a href="https://codepen.io/blazzard-jason/pen/mdKRJjK/" target="_blank">Code Pen</a></li>
-                    <li><a href="https://medium.com/" target="_blank">Medium forum</a></li>
-                </ul>
-            </div>
-        </section>
+    <section>
+        <h2>Temples</h2>
+    </section>
+        
+    <main>
+       
+        <div class="res-grid">      
+       </div>
+ 
     </main>
+
     <footer>
         <p>©️ <span id="currentyear"></span> - Sergio Pontes - Portugal</p>
         <p> Last Modified <span id="lastModified"></span> </p>
     </footer>
-    
 </body>
+
 </html>
