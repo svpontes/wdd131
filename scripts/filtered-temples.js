@@ -61,21 +61,39 @@ const temples = [
         "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
     },
     {
-        templeName: "Lima Perú",
-        location: "Lima, Perú",
+        templeName: "Lima Peru",
+        location: "Lima, Peru",
         dedicated: "1986, January, 10",
         area: 9600,
         imageUrl:
         "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
     },
     {
-        templeName: "Mexico City Mexico",
-        location: "Mexico City, Mexico",
-        dedicated: "1983, December, 2",
-        area: 116642,
+        templeName: "Fortaleza Brazil",
+        location: "Fortaleza, Brazil",
+        dedicated: "2009, October, 3",
+        area: 35437,
         imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/fortaleza-brazil/800x500/1-Fortaleza-Temple-Photo-2233938.jpg"
     },
+    {
+        templeName: "Fort Lauderdale Temple",
+        location: "Fort Lauderdale, Miami",
+        dedicated: "1983, December, 2",
+        area: 2830,
+        imageUrl:
+        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/fort-lauderdale-florida/2018/400x250/08-Fort-Lauderdale-Temple-1710146.jpg"
+    },
+   
+    {
+        templeName: "Buenos Aires Aregntina",
+        location: "Buenos Aires, Argentina",
+        dedicated: "1986, January, 17",
+        area: 1750,
+        imageUrl:
+        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/buenos-aires-argentina/400x250/buenos-airies-argentina-temple-1009069-wallpaper.jpg"
+    },
+   
    
 ];
 

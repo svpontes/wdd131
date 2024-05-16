@@ -10,21 +10,28 @@
     
     h2 {
 		font-size: 1.2rem;
-		color: #159fd6;
+		color: var(--primary);
 		margin: 1rem;
 	}
+   
+    main .res-grid{
 
-    /*.title h2{
-		/*text-align: center; *//* Centraliza o título */
-		/*margin-bottom: 20px; *//* Adiciona margem inferior para separar o título das imagens 
-	}*/
-
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2rem;
+        
+     }
     #menu {
         display: none; /* hide hamburger button */
     }
 
     .navigation {
         flex-direction: row;
+    }
+
+
+    .navigation {
+        background-color: none;
     }
 
     .navigation a {
