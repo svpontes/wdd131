@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product review form</title>
-    <meta name="description" content="Product Review form to get feedback from clients and improve services and products ">
+    <title>Product Review Form</title>
+    <meta name="description" content="Product Review form to get feedback from clients and improve services and products">
     <meta name="author" content="Sergio Vieira Pontes">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <header>
-     
-    </header>
+    <header></header>
     <main>
         <section class="form">
             <div class="form-delimitations">
@@ -22,49 +20,40 @@
                     <p>"Fill out the form and win a Bob Mac lunch as a Reward!"</p>
                     <form method="get" action="review.html" class="form-general">
                         <fieldset>
-
-                            <legend for="FirstName"><input type="text" id="fname" name="fname" placeholder="optional">First Name</legend>
-                            <label for="lastname"><input type="text" id="lname" name="lname" placeholder="optional">Last Name</label>
-                            <label>Email* <input type="email" name="email" placeholder="emailname@gmail.com" required></label>
+                            <legend>First Name (optional)</legend>
+                            <label for="fname">First Name <input type="text" id="fname" name="fname" placeholder="optional"></label>
+                            <label for="lname">Last Name <input type="text" id="lname" name="lname" placeholder="optional"></label>
+                            <label for="email">Email* <input type="email" id="email" name="email" placeholder="emailname@gmail.com" required></label>
                         </fieldset>
 
                         <fieldset>
                             <legend>Product Name</legend>
-                            <label>Ticket Number* <input type="text" name="text" placeholder=bob00123456 required></label>
-                                <select name="subject">
-                                    <option disable selected>Select a product</option>
-                                    <option value="BobTastyTurboBaconSingle">Bob Tasty® Turbo Bacon Single</option>
-                                    <option value="BobTastyTurboBaconDouble">Bob Tasty® Turbo Bacon Double</option>
-                                    <option value="BcCrispyOriginal">Bob McCrispy Original</option>
-                                    <option value="BobMac">Bob Mac®</option>
-                                    <option value="BobDoubleCheeseburger">Bob Double Cheeseburger</option>
-                                    <option value="BobMcRoyalCheese">Bob McRoyal® Cheese</option>
-                                    <option value="BobMcRoyalDeluxe">Bob McRoyal® Deluxe</option>
-                                    <option value="BobMcChicken">Bob McChicken®/option>
-                                </select>
-
-                                </label>
-                                <label for="purchasedate"><input type="date" id="date" name="completeDate" required>Purchase date</label>
-
+                            <label for="ticket">Ticket Number* <input type="text" id="ticket" name="ticket" placeholder="bob00123456" required></label>
+                            <select name="subject">
+                                <option disabled selected>Select a product</option>
+                                <option value="BobTastyTurboBaconSingle">Bob Tasty® Turbo Bacon Single</option>
+                                <option value="BobTastyTurboBaconDouble">Bob Tasty® Turbo Bacon Double</option>
+                                <option value="BcCrispyOriginal">Bob McCrispy Original</option>
+                                <option value="BobMac">Bob Mac®</option>
+                                <option value="BobDoubleCheeseburger">Bob Double Cheeseburger</option>
+                                <option value="BobMcRoyalCheese">Bob McRoyal® Cheese</option>
+                                <option value="BobMcRoyalDeluxe">Bob McRoyal® Deluxe</option>
+                                <option value="BobMcChicken">Bob McChicken®</option>
+                            </select>
+                            <label for="purchasedate">Purchase Date <input type="date" id="purchasedate" name="completeDate" required></label>
                         </fieldset>
 
                         <fieldset>
-                            <div>Customer Service Overall Rating</div>
+                            <legend>Customer Service Overall Rating</legend>
                             <label for="rating-low"><input type="radio" id="rating-low" name="rating" value="low" required> 1 - Low</label>
                             <label for="rating-average"><input type="radio" id="rating-average" name="rating" value="average"> 2 - Average</label>
                             <label for="rating-good"><input type="radio" id="rating-good" name="rating" value="Good"> 3 - Good</label>
                             <label for="rating-excellent"><input type="radio" id="rating-excellent" name="rating" value="Excellent"> 4 - Excellent</label>
                             <label for="rating-outstanding"><input type="radio" id="rating-outstanding" name="rating" value="outstanding"> 5 - Outstanding</label>
                         </fieldset>
-                        
 
                         <fieldset>
-                            
-                            <div>
-                                <p>Tell us how was your experience with our products?</p>
-                                <p>(Check all that apply)</p>
-                            </div>
-
+                            <legend>Tell us how was your experience with our products? (Check all that apply)</legend>
                             <label for="editing-fast"><input type="checkbox" id="editing-fast" name="editing" value="yes"> fast</label>
                             <label for="code-cold"><input type="checkbox" id="code-cold" name="code" value="yes"> cold</label>
                             <label for="process-hot"><input type="checkbox" id="process-hot" name="process" value="yes"> hot</label>
@@ -76,29 +65,19 @@
                         </fieldset>
 
                         <fieldset>
-                            
-                            <div>
-                                <p>Write your comments (Optional)</p>
-                            </div>
-
+                            <legend>Write your comments (Optional)</legend>
                             <textarea name="comments" id="comment" cols="40" rows="5"></textarea>
-                            
-
                         </fieldset>
                         
-                        <input type="submit" value="Post my Review">   
-                        
+                        <input type="submit" value="Post my Review">
                     </form>
                 </div>
-
             </div>
         </section>
     </main>
-
     <footer>
         <p>©️ <span id="currentyear"></span> - Sergio Pontes - Portugal</p>
-        <p> Last Modified <span id="lastModified"></span> </p>
+        <p>Last Modified <span id="lastModified"></span></p>
     </footer>
-    
 </body>
 </html>
