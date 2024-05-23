@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Sergio Pontes</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Sergio Pontes - Product Review form">
-    <meta name="author" content="Sergio Pontes">
+    <title>Product review form</title>
+    <meta name="description" content="Product Review form to get feedback from clients and improve services and products ">
+    <meta name="author" content="Sergio Vieira Pontes">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/getdates.js" defer></script>
@@ -18,13 +18,13 @@
         <section class="form">
             <div class="form-delimitations">
                 <div class="title-form">
-                    <h1>Product Satisfation Review</h1>
+                    <h1>Product Review</h1>
                     <p>"Fill out the form and win a Bob Mac lunch as a Reward!"</p>
                     <form method="get" action="review.html" class="form-general">
                         <fieldset>
 
-                            <legend>First Name* <input type="text" name="fname" required></legend>
-                            <label>Last Name* <input type="text" name="lname" required></label>
+                            <legend for="FirstName"><input type="text" id="fname" name="fname" placeholder="optional">First Name</legend>
+                            <label for="lastname"><input type="text" id="lname" name="lname" placeholder="optional">Last Name</label>
                             <label>Email* <input type="email" name="email" placeholder="emailname@gmail.com" required></label>
                         </fieldset>
 
@@ -44,20 +44,19 @@
                                 </select>
 
                                 </label>
-                                <label>Purchase Date</label><input type="date" name="completeDate"></label>
+                                <label for="purchasedate"><input type="date" id="date" name="completeDate" required>Purchase date</label>
 
                         </fieldset>
 
                         <fieldset>
-
-                            <div>Customer Service Overal Rating</div>
-                            <label><input type="radio" name="rating" value="low">low</label>
-                            <label><input type="radio" name="rating" value="average">Average</label>
-                            <label><input type="radio" name="rating" value="Good">Good</label>
-                            <label><input type="radio" name="rating" value="Excellent">Excellent</label>
-                            <label><input type="radio" name="rating" value="outsanding">Outstanding</label>
-
+                            <div>Customer Service Overall Rating</div>
+                            <label for="rating-low"><input type="radio" id="rating-low" name="rating" value="low" required> 1 - Low</label>
+                            <label for="rating-average"><input type="radio" id="rating-average" name="rating" value="average"> 2 - Average</label>
+                            <label for="rating-good"><input type="radio" id="rating-good" name="rating" value="Good"> 3 - Good</label>
+                            <label for="rating-excellent"><input type="radio" id="rating-excellent" name="rating" value="Excellent"> 4 - Excellent</label>
+                            <label for="rating-outstanding"><input type="radio" id="rating-outstanding" name="rating" value="outstanding"> 5 - Outstanding</label>
                         </fieldset>
+                        
 
                         <fieldset>
                             
@@ -66,29 +65,28 @@
                                 <p>(Check all that apply)</p>
                             </div>
 
-                            <label><input type="checkbox" name="editing" value="yes">fast</label>
-                            <label><input type="checkbox" name="code" value="yes">cold</label>
-                            <label><input type="checkbox" name="process" value="yes">hot</label>
-                            <label><input type="checkbox" name="client" value="yes">slow</label>
-                            <label><input type="checkbox" name="editing" value="yes">tast</label>
-                            <label><input type="checkbox" name="code" value="yes">salt</label>
-                            <label><input type="checkbox" name="process" value="yes">fresh</label>
-                            <label><input type="checkbox" name="client" value="yes">crusty</label>
-
-
+                            <label for="editing-fast"><input type="checkbox" id="editing-fast" name="editing" value="yes"> fast</label>
+                            <label for="code-cold"><input type="checkbox" id="code-cold" name="code" value="yes"> cold</label>
+                            <label for="process-hot"><input type="checkbox" id="process-hot" name="process" value="yes"> hot</label>
+                            <label for="client-slow"><input type="checkbox" id="client-slow" name="client" value="yes"> slow</label>
+                            <label for="editing-tast"><input type="checkbox" id="editing-tast" name="editing" value="yes"> tast</label>
+                            <label for="code-salt"><input type="checkbox" id="code-salt" name="code" value="yes"> salt</label>
+                            <label for="process-fresh"><input type="checkbox" id="process-fresh" name="process" value="yes"> fresh</label>
+                            <label for="client-crusty"><input type="checkbox" id="client-crusty" name="client" value="yes"> crusty</label>
                         </fieldset>
+
                         <fieldset>
                             
                             <div>
                                 <p>Write your comments (Optional)</p>
                             </div>
 
-                            <textarea name="comments" id="comments" cols="40" rows="5"></textarea>
+                            <textarea name="comments" id="comment" cols="40" rows="5"></textarea>
                             
 
                         </fieldset>
                         
-                        
+                        <input type="submit" value="Post my Review">   
                         
                     </form>
                 </div>
