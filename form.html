@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Sergio Pontes</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Sergio Pontes - Product Review form">
+    <meta name="author" content="Sergio Pontes">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+     
+    </header>
+    <main>
+        <section class="form">
+            <div class="form-delimitations">
+                <div class="title-form">
+                    <h1>Product Satisfation Review</h1>
+                    <p>"Fill out the form and win a Bob Mac lunch as a Reward!"</p>
+                    <form method="get" action="review.html" class="form-general">
+                        <fieldset>
+
+                            <legend>First Name* <input type="text" name="fname" required></legend>
+                            <label>Last Name* <input type="text" name="lname" required></label>
+                            <label>Email* <input type="email" name="email" placeholder="emailname@gmail.com" required></label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Product Name</legend>
+                            <label>Ticket Number* <input type="text" name="text" placeholder=bob00123456 required></label>
+                                <select name="subject">
+                                    <option disable selected>Select a product</option>
+                                    <option value="BobTastyTurboBaconSingle">Bob Tasty® Turbo Bacon Single</option>
+                                    <option value="BobTastyTurboBaconDouble">Bob Tasty® Turbo Bacon Double</option>
+                                    <option value="BcCrispyOriginal">Bob McCrispy Original</option>
+                                    <option value="BobMac">Bob Mac®</option>
+                                    <option value="BobDoubleCheeseburger">Bob Double Cheeseburger</option>
+                                    <option value="BobMcRoyalCheese">Bob McRoyal® Cheese</option>
+                                    <option value="BobMcRoyalDeluxe">Bob McRoyal® Deluxe</option>
+                                    <option value="BobMcChicken">Bob McChicken®/option>
+                                </select>
+
+                                </label>
+                                <label>Purchase Date</label><input type="date" name="completeDate"></label>
+
+                        </fieldset>
+
+                        <fieldset>
+
+                            <div>Customer Service Overal Rating</div>
+                            <label><input type="radio" name="rating" value="low">low</label>
+                            <label><input type="radio" name="rating" value="average">Average</label>
+                            <label><input type="radio" name="rating" value="Good">Good</label>
+                            <label><input type="radio" name="rating" value="Excellent">Excellent</label>
+                            <label><input type="radio" name="rating" value="outsanding">Outstanding</label>
+
+                        </fieldset>
+
+                        <fieldset>
+                            
+                            <div>
+                                <p>Tell us how was your experience with our products?</p>
+                                <p>(Check all that apply)</p>
+                            </div>
+
+                            <label><input type="checkbox" name="editing" value="yes">fast</label>
+                            <label><input type="checkbox" name="code" value="yes">cold</label>
+                            <label><input type="checkbox" name="process" value="yes">hot</label>
+                            <label><input type="checkbox" name="client" value="yes">slow</label>
+                            <label><input type="checkbox" name="editing" value="yes">tast</label>
+                            <label><input type="checkbox" name="code" value="yes">salt</label>
+                            <label><input type="checkbox" name="process" value="yes">fresh</label>
+                            <label><input type="checkbox" name="client" value="yes">crusty</label>
+
+
+                        </fieldset>
+                        <fieldset>
+                            
+                            <div>
+                                <p>Write your comments (Optional)</p>
+                            </div>
+
+                            <textarea name="comments" id="comments" cols="40" rows="5"></textarea>
+                            
+
+                        </fieldset>
+                        
+                        
+                        
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>©️ <span id="currentyear"></span> - Sergio Pontes - Portugal</p>
+        <p> Last Modified <span id="lastModified"></span> </p>
+    </footer>
+    
+</body>
+</html>
