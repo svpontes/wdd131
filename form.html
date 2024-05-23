@@ -20,14 +20,14 @@
                     <p>"Fill out the form and win a Bob Mac lunch as a Reward!"</p>
                     <form method="get" action="review.html" class="form-general">
                         <fieldset>
-                            <legend>First Name (optional)</legend>
+                            <legend>Your informations</legend>
                             <label for="fname">First Name <input type="text" id="fname" name="fname" placeholder="optional"></label>
                             <label for="lname">Last Name <input type="text" id="lname" name="lname" placeholder="optional"></label>
                             <label for="email">Email* <input type="email" id="email" name="email" placeholder="emailname@gmail.com" required></label>
                         </fieldset>
 
                         <fieldset>
-                            <legend>Product Name</legend>
+                            <legend>Product Information</legend>
                             <label for="ticket">Ticket Number* <input type="text" id="ticket" name="ticket" placeholder="bob00123456" required></label>
                             <select name="subject">
                                 <option disabled selected>Select a product</option>
@@ -44,7 +44,7 @@
                         </fieldset>
 
                         <fieldset>
-                            <legend>Customer Service Overall Rating</legend>
+                            <legend>Overall Rating</legend>
                             <label for="rating-low"><input type="radio" id="rating-low" name="rating" value="low" required> 1 - Low</label>
                             <label for="rating-average"><input type="radio" id="rating-average" name="rating" value="average"> 2 - Average</label>
                             <label for="rating-good"><input type="radio" id="rating-good" name="rating" value="Good"> 3 - Good</label>
@@ -53,7 +53,8 @@
                         </fieldset>
 
                         <fieldset>
-                            <legend>Tell us how was your experience with our products? (Check all that apply)</legend>
+                            <legend>Your Experience</legend>
+                            <p>Tell us how was your experience with our products? (Check all that apply)</p>
                             <label for="editing-fast"><input type="checkbox" id="editing-fast" name="editing" value="yes"> fast</label>
                             <label for="code-cold"><input type="checkbox" id="code-cold" name="code" value="yes"> cold</label>
                             <label for="process-hot"><input type="checkbox" id="process-hot" name="process" value="yes"> hot</label>
@@ -65,8 +66,8 @@
                         </fieldset>
 
                         <fieldset>
-                            <legend>Write your comments (Optional)</legend>
-                            <textarea name="comments" id="comment" cols="40" rows="5"></textarea>
+                            <legend>Your Comments</legend>
+                            <textarea name="comments" id="comment" cols="40" rows="5" placeholder="Write your comments here(Optional)"></textarea>
                         </fieldset>
                         
                         <input type="submit" value="Post my Review">
