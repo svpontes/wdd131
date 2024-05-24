@@ -82,7 +82,7 @@ legend{
 
 /*----------h1 Product Review style---*/
 
-.form-delimitations h2 .title {
+.form-delimitations h1 .title {
     color: rgb(130, 255, 14);
     font-size: 25px;
     font-weight: 700;
@@ -90,7 +90,7 @@ legend{
     padding: 0 .5rem;
 }
 
-h2{
+h1{
     font-size: 25px;
     font-weight: 700;
     text-align: center;
