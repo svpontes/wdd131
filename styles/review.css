@@ -23,14 +23,22 @@ h1{
     
 }
 
+.label{
+
+    font-weight: 700;
+    color: rgb(189, 9, 39);
+}
+
 p {
     text-align: center;
     margin-bottom: 50px;
+    padding-top: 20px;
 }
 
 h2{
     text-align: center;
     font-weight: 700;
+    padding-top: 20px;
 }
 
 h3{
@@ -78,11 +86,11 @@ select{
 /*--------delimitations footer------------------*/
 footer{
 
-    padding: 10px 4%;
+    padding: 1px 4%;
     background-color: black;
     color: white;
     text-align: center;
-    margin: 350px auto;
+    margin: 50px auto;
     max-width: 500px;
 
 }

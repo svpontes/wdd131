@@ -9,6 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/getdates.js" defer></script>
+    <script src="./scripts/form.js" defer></script>
 </head>
 <body>
     <header></header>
@@ -19,7 +20,7 @@
                     <form method="get" action="review.html" class="form-general">
                         <div>
                             <h1>PRODUCT <span class="title">REVIEW</span></h1>
-                            <p>"Fill out the form and win a Bob Mac lunch as a Reward!"</p>
+                            <p>"Fill out the form for a chance to win a Bob Mac lunch as a reward!"</p>
                         </div>
                         <fieldset>
                             <legend>Your informations</legend>
@@ -31,15 +32,7 @@
                             <legend>Product Information</legend>
                             <label for="ticket">Ticket Number <input type="text" id="ticket" name="ticket" placeholder="bob00123456"></label>
                             <select name="subject">
-                                <option disabled selected>Select a product</option>
-                                <option value="BobTastyTurboBaconSingle">Bob Tasty® Turbo Bacon Single</option>
-                                <option value="BobTastyTurboBaconDouble">Bob Tasty® Turbo Bacon Double</option>
-                                <option value="BcCrispyOriginal">Bob McCrispy Original</option>
-                                <option value="BobMac">Bob Mac®</option>
-                                <option value="BobDoubleCheeseburger">Bob Double Cheeseburger</option>
-                                <option value="BobMcRoyalCheese">Bob McRoyal® Cheese</option>
-                                <option value="BobMcRoyalDeluxe">Bob McRoyal® Deluxe</option>
-                                <option value="BobMcChicken">Bob McChicken®</option>
+                                <!--STEP 4 -product name options will be populated - JavaScript -->
                             </select>
                             <label for="purchasedate"><input type="date" id="purchasedate" name="completeDate" required></label>
                         </fieldset>
@@ -63,7 +56,7 @@
                             <label for="editing-tast"><input type="checkbox" id="editing-tast" name="editing" value="yes"> tast</label>
                             <label for="code-salt"><input type="checkbox" id="code-salt" name="code" value="yes"> salt</label>
                             <label for="process-fresh"><input type="checkbox" id="process-fresh" name="process" value="yes"> fresh</label>
-                            <label for="client-crusty"><input type="checkbox" id="client-crusty" name="client" value="yes"> crusty</label>
+                            <label for="client-crusty"><input type="checkbox" id="client-crusty" name="client" value="yes"> crunchy</label>
                         </fieldset>
 
                         <fieldset>

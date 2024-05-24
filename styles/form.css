@@ -168,8 +168,10 @@ form .btn-submit input{
 
 button:hover, form .btn-submit input:hover{
 
-box-shadow: 0px 0px 2px #585858;
-transform:scale(0.95) ;
+
+background: black;
+color: rgb(130, 255, 14);
+font-weight: 600; 
 
 }
 
