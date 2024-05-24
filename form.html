@@ -15,10 +15,12 @@
     <main>
         <section class="form">
             <div class="form-delimitations">
-                <div class="title-form">
-                    <h1>Product Review</h1>
-                    <p>"Fill out the form and win a Bob Mac lunch as a Reward!"</p>
+                
                     <form method="get" action="review.html" class="form-general">
+                        <div>
+                            <h2>PRODUCT <span class="title">REVIEW</span></h2>
+                            <p>"Fill out the form and win a Bob Mac lunch as a Reward!"</p>
+                        </div>
                         <fieldset>
                             <legend>Your informations</legend>
                             <label for="fname">First Name <input type="text" id="fname" name="fname" placeholder="optional"></label>
@@ -26,7 +28,7 @@
                             <label for="email">Email* <input type="email" id="email" name="email" placeholder="emailname@gmail.com" required></label>
                         </fieldset>
 
-                        <fieldset>
+                        <fieldset class="productinfo">
                             <legend>Product Information</legend>
                             <label for="ticket">Ticket Number <input type="text" id="ticket" name="ticket" placeholder="bob00123456"></label>
                             <select name="subject">
@@ -40,10 +42,10 @@
                                 <option value="BobMcRoyalDeluxe">Bob McRoyal® Deluxe</option>
                                 <option value="BobMcChicken">Bob McChicken®</option>
                             </select>
-                            <label for="purchasedate">Purchase Date <input type="date" id="purchasedate" name="completeDate" required></label>
+                            <label for="purchasedate"><input type="date" id="purchasedate" name="completeDate" required></label>
                         </fieldset>
 
-                        <fieldset>
+                        <fieldset class="overal">
                             <legend>Overall Rating</legend>
                             <label for="rating-low"><input type="radio" id="rating-low" name="rating" value="low" required> 1 - Low</label>
                             <label for="rating-average"><input type="radio" id="rating-average" name="rating" value="average"> 2 - Average</label>
@@ -52,9 +54,9 @@
                             <label for="rating-outstanding"><input type="radio" id="rating-outstanding" name="rating" value="outstanding"> 5 - Outstanding</label>
                         </fieldset>
 
-                        <fieldset>
+                        <fieldset class="exp">
                             <legend>Your Experience</legend>
-                            <p>Tell us how was your experience with our products? (Check all that apply)</p>
+                            <p>Tell us how was your experience with our products? <span class="checkall">(Check all that apply)</span></p>
                             <label for="editing-fast"><input type="checkbox" id="editing-fast" name="editing" value="yes"> fast</label>
                             <label for="code-cold"><input type="checkbox" id="code-cold" name="code" value="yes"> cold</label>
                             <label for="process-hot"><input type="checkbox" id="process-hot" name="process" value="yes"> hot</label>
@@ -67,13 +69,14 @@
 
                         <fieldset>
                             <legend>Your Comments</legend>
-                            <textarea name="comments" id="comment" cols="40" rows="5" placeholder="Write your comments here(Optional)"></textarea>
+                            <textarea name="comments" id="comment" cols="40" rows="5" placeholder="Type your comments here(Optional)"></textarea>
                         </fieldset>
-                        
+                        <div class="btn-submit">
                         <input type="submit" value="Post my Review">
+                        </div>
                     </form>
                 </div>
-            </div>
+            
         </section>
     </main>
     <footer>
