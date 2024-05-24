@@ -8,7 +8,6 @@
     <meta name="author" content="Sergio Vieira Pontes">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="styles/form.css">
-    <link rel="stylesheet" href="styles/form-small.css">
     <script src="scripts/getdates.js" defer></script>
     <script src="./scripts/form.js" defer></script>
 </head>
@@ -17,59 +16,87 @@
     <main>
         <section class="form">
             <div class="form-delimitations">
-                
-                    <form method="get" action="review.html" class="form-general">
-                        <div>
-                            <h1>PRODUCT <span class="title">REVIEW</span></h1>
-                            <p>"Fill out the form for a chance to win a Bob Mac lunch as a Reward!"</p>
-                        </div>
-                        <fieldset>
-                            <legend>Your informations</legend>
-                            <label for="fname">Name <input type="text" id="fname" name="fname" placeholder="(optional)"></label>
-                            <label for="email">Email* <input type="email" id="email" name="email" placeholder="emailname@gmail.com" required></label>
-                        </fieldset>
-
-                        <fieldset class="productinfo">
-                            <legend>Product Information</legend>
-                            <label for="ticket">Ticket Number <input type="text" id="ticket" name="ticket" placeholder="bob00123456"></label>
-                            <select name="subject">
-                                <!--STEP 4 -product name options will be populated - JavaScript -->
-                            </select>
-                            <label for="purchasedate"><input type="date" id="purchasedate" name="completeDate" required></label>
-                        </fieldset>
-
-                        <fieldset class="overal">
-                            <legend>Overall Rating</legend>
-                            <label for="rating-low"><input type="radio" id="rating-low" name="rating" value="low" required> 1 - Low</label>
-                            <label for="rating-average"><input type="radio" id="rating-average" name="rating" value="average"> 2 - Average</label>
-                            <label for="rating-good"><input type="radio" id="rating-good" name="rating" value="Good"> 3 - Good</label>
-                            <label for="rating-excellent"><input type="radio" id="rating-excellent" name="rating" value="Excellent"> 4 - Excellent</label>
-                            <label for="rating-outstanding"><input type="radio" id="rating-outstanding" name="rating" value="outstanding"> 5 - Outstanding</label>
-                        </fieldset>
-
-                        <fieldset class="exp">
-                            <legend>Your Experience</legend>
-                            <p>Tell us how was your experience with our products? <span class="checkall">(Check all that apply)</span></p>
-                            <label for="editing-fast"><input type="checkbox" id="editing-fast" name="editing" value="yes"> fast</label>
-                            <label for="code-cold"><input type="checkbox" id="code-cold" name="code" value="yes"> cold</label>
-                            <label for="process-hot"><input type="checkbox" id="process-hot" name="process" value="yes"> hot</label>
-                            <label for="client-slow"><input type="checkbox" id="client-slow" name="client" value="yes"> slow</label>
-                            <label for="editing-tast"><input type="checkbox" id="editing-tast" name="editing" value="yes"> tast</label>
-                            <label for="code-salt"><input type="checkbox" id="code-salt" name="code" value="yes"> salt</label>
-                            <label for="process-fresh"><input type="checkbox" id="process-fresh" name="process" value="yes"> fresh</label>
-                            <label for="client-crusty"><input type="checkbox" id="client-crusty" name="client" value="yes"> crunchy</label>
-                        </fieldset>
-
-                        <fieldset>
-                            <legend>Your Comments</legend>
-                            <textarea name="comments" id="comment" cols="40" rows="5" placeholder="Type your comments here(Optional)"></textarea>
-                        </fieldset>
-                        <div class="btn-submit">
+                <form method="get" action="review.html" class="form-general">
+                    <div>
+                        <h1>PRODUCT <span class="title">REVIEW</span></h1>
+                        <p>"Fill out the form for a chance to win a Bob Mac lunch as a Reward!"</p>
+                    </div>
+                    <fieldset>
+                        <legend>Your informations</legend>
+                        <label for="fname">Name 
+                            <input type="text" id="fname" name="fname" placeholder="(optional)" autocomplete="name">
+                        </label>
+                        <label for="email">Email* 
+                            <input type="email" id="email" name="email" placeholder="emailname@gmail.com" required autocomplete="email">
+                        </label>
+                    </fieldset>
+                    <fieldset class="productinfo">
+                        <legend>Product Information</legend>
+                        <label for="ticket">Ticket Number 
+                            <input type="text" id="ticket" name="ticket" placeholder="bob00123456" autocomplete="off">
+                        </label>
+                        <select name="subject" autocomplete="off">
+                            <!-- Options will be populated by JavaScript -->
+                        </select>
+                        <label for="purchasedate">
+                            <input type="date" id="purchasedate" name="completeDate" required autocomplete="off">
+                        </label>
+                    </fieldset>
+                    <fieldset class="overal">
+                        <legend>Overall Rating</legend>
+                        <label for="rating-low">
+                            <input type="radio" id="rating-low" name="rating" value="low" required autocomplete="off"> 1 - Low
+                        </label>
+                        <label for="rating-average">
+                            <input type="radio" id="rating-average" name="rating" value="average" autocomplete="off"> 2 - Average
+                        </label>
+                        <label for="rating-good">
+                            <input type="radio" id="rating-good" name="rating" value="Good" autocomplete="off"> 3 - Good
+                        </label>
+                        <label for="rating-excellent">
+                            <input type="radio" id="rating-excellent" name="rating" value="Excellent" autocomplete="off"> 4 - Excellent
+                        </label>
+                        <label for="rating-outstanding">
+                            <input type="radio" id="rating-outstanding" name="rating" value="outstanding" autocomplete="off"> 5 - Outstanding
+                        </label>
+                    </fieldset>
+                    <fieldset class="exp">
+                        <legend>Your Experience</legend>
+                        <p>Tell us how was your experience with our products? <span class="checkall">(Check all that apply)</span></p>
+                        <label for="editing-fast">
+                            <input type="checkbox" id="editing-fast" name="editing" value="yes" autocomplete="off"> fast
+                        </label>
+                        <label for="code-cold">
+                            <input type="checkbox" id="code-cold" name="code" value="yes" autocomplete="off"> cold
+                        </label>
+                        <label for="process-hot">
+                            <input type="checkbox" id="process-hot" name="process" value="yes" autocomplete="off"> hot
+                        </label>
+                        <label for="client-slow">
+                            <input type="checkbox" id="client-slow" name="client" value="yes" autocomplete="off"> slow
+                        </label>
+                        <label for="editing-tast">
+                            <input type="checkbox" id="editing-tast" name="editing" value="yes" autocomplete="off"> tast
+                        </label>
+                        <label for="code-salt">
+                            <input type="checkbox" id="code-salt" name="code" value="yes" autocomplete="off"> salt
+                        </label>
+                        <label for="process-fresh">
+                            <input type="checkbox" id="process-fresh" name="process" value="yes" autocomplete="off"> fresh
+                        </label>
+                        <label for="client-crusty">
+                            <input type="checkbox" id="client-crusty" name="client" value="yes" autocomplete="off"> crunchy
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Your Comments</legend>
+                        <textarea name="comments" id="comment" cols="40" rows="5" placeholder="Type your comments here(Optional)" autocomplete="off"></textarea>
+                    </fieldset>
+                    <div class="btn-submit">
                         <input type="submit" value="Post my Review">
-                        </div>
-                    </form>
-                </div>
-            
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
