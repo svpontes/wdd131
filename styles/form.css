@@ -48,6 +48,7 @@ fieldset.exp .checkall {
     gap: 10px;
     align-items: center;
     
+    
  
 }
 
@@ -83,18 +84,22 @@ legend{
 
 .form-delimitations h2 .title {
     color: rgb(130, 255, 14);
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 700;
     background-color: black;
     padding: 0 .5rem;
 }
 
 h2{
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 700;
     text-align: center;
-   padding-bottom: 20px;
+    padding-bottom: 5px;
     
+}
+
+p {
+    text-align: center;
 }
 
 /*----------form delimitations------------*/
@@ -137,6 +142,7 @@ form textarea{
     padding: 8px 15px;
     border-radius: 10px;
     resize: none;
+    height: 80px;
 
 
 }
@@ -208,7 +214,7 @@ select{
 /*--------delimitations footer------------------*/
 footer{
 
-    padding: 40px 4%;
+    padding: 10px 4%;
     background-color: black;
     color: white;
     text-align: center;
