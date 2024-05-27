@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+
+  html{
+
+    height: 100vh;
+  }
+  
+  body{
+       
+    background-image: url("../images/studioAcoresAssets/fundo-acores\ \(1\).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px;
+  }
+  
+  a:hover {
+    
+    font-weight: 600;
+  }
+  
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+    
+   
+  }
+  
+  img{
+      padding-top: 15px;
+      width: 150px;
+      
+  }
+  
+  header{
+    width: 100%;
+    background-color: rgb(122, 119, 119);
+    position: fixed;
+    padding: 20px 4%;
+    top: 0;
+    left: 0;
+  }
+ 
+  
+  .wireframe img{
+
+    padding-top: 320px;
+    padding-bottom: 20px;
+    width: 50%;
+
+ 
+  }
+
+  
+  .header, img{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    margin: auto;
+    
+  }
+  
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    color: #fff;  
+    letter-spacing: 1px;
+    margin-left: auto;
+  }
+  
+  
+  
+  footer{
+    height: 80px;
+    background-color: #292828;
+    color: #ffff;
+    text-align: center;
+    padding: 20px;
+    margin: 380px auto;
+    
+  }
+  
+  .nav-footer{
+  
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    
+  }
+  
+  
+  
