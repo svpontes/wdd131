@@ -82,7 +82,7 @@ nav{
 
 active::before {
 	content: "📍";  /* just a wayfinding symbol for the user */
-}.
+}
 
 
 main {

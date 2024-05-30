@@ -1,0 +1,435 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    background-image: url("../images/bkgstudioacoreshighquality.webp");
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: rgb(43, 192, 214);
+}
+
+/* Header */
+header {
+    padding: 20px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    font-weight: 600;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+header img {
+    width: 100px;
+    margin-left: 200px;
+}
+
+/* Botão Contact Us */
+.btn-contact button {
+    padding: 10px 40px;
+    font-size: 15px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    margin-right: 200px;
+}
+
+.btn-contact button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(226, 37, 37);
+    box-shadow: 0px 0px 8px white;
+}
+
+.btn-contact {
+    display: block;
+}
+
+/* Navegação em dispositivos móveis */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: #ffffff;
+    background-color: rgba(43, 191, 214, 0);
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navigation a:hover {
+    background-color: #159fd600;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* Quando o botão é clicado */
+.open a {
+    display: block;
+}
+
+/* Topo do site */
+section.site-top {
+    padding: 40px 4%;
+}
+
+.flex {
+    display: flex;
+}
+
+section.site-top .flex {
+    align-items: center;
+    justify-content: center;
+}
+
+.site-top h1 {
+    font-weight: 700;
+    font-size: 55px;
+    text-align: center;
+    color: white;
+}
+
+span {
+    color: white;
+}
+
+.wemfyou {
+    font-weight: bold;
+    color: rgb(247, 233, 50);
+    font-size: 30px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+span.tshirt {
+    color: rgb(247, 233, 50);
+    font-size: 68px;
+}
+
+p {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.flex .txt-site .btn-portfolio button {
+    padding: 10px 40px;
+    font-size: 15px;
+    font-weight: 400;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.flex .txt-site .btn-portfolio button:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(247, 233, 50);
+}
+
+.txt-site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Rodapé */
+footer {
+    padding: 20px 14%;
+    margin: 0 auto;
+    margin-top: 95px;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.menu-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.menu-footer ul li a, footer nav .menu-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-footer a:hover {
+    font-weight: 600;
+}
+
+.imgfooter {
+    width: 18px;
+    margin-right: 10px;
+}
+
+/* Navegação em visualização grande */
+@media (min-width: 37.5em) {
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    p {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #menu {
+        display: none; /* Esconder botão hamburger */
+    }
+
+    .navigation {
+        flex-direction: row;
+        color: black;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+}
+
+/* Estilos do carrossel */
+.carousel {
+    padding-top: 20px;
+    position: relative;
+    max-width: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
+    opacity: 1;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.carousel-item img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    header > .interface {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        padding: 2px 0;
+    }
+
+    p {
+        font-size: 1.2rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .site-top h1 {
+        font-weight: 700;
+        font-size: 35px;
+        text-align: center;
+        color: white;
+    }
+
+    .carousel {
+        max-width: 100%;
+    }
+
+    .carousel-item img {
+        width: 100%;
+    }
+
+    .btn-contact button {
+        padding: 10px 20px;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 20px 5%;
+    }
+
+    .menu-footer ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+    @media (max-width: 480px) {
+    .btn-contact button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .site-top h1 {
+        font-size: 28px;
+    }
+
+    span.tshirt {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .carousel-control {
+        font-size: 20px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-desktop {
+        display: none;
+    }
+
+@media (max-width: 768px) {
+    header nav ul li {
+        padding:  0 0; /* Diminuir o espaço entre os itens do menu em telas menores */
+    }
+}
+}
+
+/* Outros estilos CSS ... */
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    /* Outras regras de mídia para telas menores ... */
+
+    .menu-desktop {
+        display: none;
+    }
+    
+    .menu-footer {
+        display: none; /* Esconde o menu do footer em telas pequenas */
+    }
+
+    /* Ajuste para diminuir o espaço entre os itens do menu em telas menores */
+    footer nav .menu-footer ul li {
+        padding: 0; 
+    }
+}
+
+

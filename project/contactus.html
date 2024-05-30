@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Talk with us. Our customer service is open to help you! Discover a wide variety of styles and customization options to create unique shirts that reflect your personality and style.">
+    <meta name="author" content="Sergio Pontes">
+    <title>Studio Acores Custom T-shirts Contact page</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="icon" href="../images/studioacoresicopng.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/siteplan.css">
+    <link rel="stylesheet" href="../project/styles/contactus.css">
+    <script src="../project/scripts/hanBscripts.js" defer></script>
+    <script src="../project/scripts/department.js" defer></script>
+    <script src="../project/scripts/popuptks.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="interface">
+        <div class="logo">
+            <a href="./siteplan.html">
+                <img src="../project/images/logofundobranco.webp" alt="Studio Acores logo">
+            </a>
+        </div>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="./siteplan.html">Home</a></li>
+                <li><a href="./portifolio.html">T-shirt</a></li>
+                <li><a href="#">Cups</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+        <div class="btn-contact">
+            <a href="./contactus.html">
+                <button id="contact">Contact us</button>
+            </a>
+        </div>
+    </div>
+</header>
+<main>
+
+   <section class="form">
+        <div class="interface">
+            <h2>TALK TO US</h2>
+            <form id="contactForm">
+                <input type="text" name="name" id="name" placeholder="Your name:" required>
+                <input type="email" name="email" id="email" placeholder="Your e-mail:" required>
+                <select name="subject" autocomplete="off">
+                    <!-- Options will be populated by JavaScript -->
+                </select>
+                <textarea name="message" id="message" cols="40" rows="5" placeholder="Type your message here" autocomplete="off"></textarea>
+                <div class="btn-submit">
+                    <input type="submit" value="Send My Message" name="send" id="send">
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Pop up -->
+    <!-- Pop up -->
+    <div id="thankYouPopUp" class="modal hidden">
+        <div class="tks-content">
+            <span class="close-btn">&times;</span>
+            <p id="thankYouMessage"></p>
+        </div>
+    </div>
+    </div>
+</main>
+<footer>
+    <nav class="menu-footer">
+        <ul>
+            <li><a href="./siteplan.html">Home</a></li>
+            <li><a href="./portifolio.html">T-shirt</a></li>
+            <li><a href="#">Cups</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="./contactus.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <p><img class="imgfooter" src="./images/logo white svg s.svg" alt=""><span id="currentyear"></span> Studio Acores Custom T-shirts | Author: Sergio Pontes | Portugal</p>
+    <p>customerservice@studio-acores.com</span></p>
+</footer>
+</body>
+</html>

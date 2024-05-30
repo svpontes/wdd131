@@ -1,0 +1,241 @@
+section{
+
+    padding: 30px 35%;
+
+}
+
+form{
+
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.interface h2{
+    font-size: 50px;
+    font-weight:bolder ;
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+    
+    
+}
+
+form input{
+
+    width: 100%;
+    background-color: rgb(63, 63, 63);
+    border: 0;
+    outline: 0;
+    padding: 15px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 15px;
+}
+
+form input::placeholder{
+
+    color: rgb(232, 247, 23);
+}
+
+form textarea{
+
+    resize: none;
+    width: 100%;
+    height: 105px;
+    background-color: rgb(63, 63, 63);
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    font-size: 15px;
+    color: white;
+}
+
+form textarea::placeholder{
+
+    color: rgb(232, 247, 23);
+}
+
+/*--------textarea styles-----------*/
+/*
+/* Estilo para a barra de rolagem */
+textarea::-webkit-scrollbar {
+    width: 12px; /* largura da barra de rolagem */
+    background: rgba(232, 247, 23, 0);
+
+    
+}
+
+/* Estilo para a trilha da barra de rolagem */
+textarea::-webkit-scrollbar-track {
+    background-color: rgba(130, 255, 14, 0); /* cor do fundo da trilha */
+    border-radius: 10px; /* bordas arredondadas */
+    
+    
+} 
+
+
+
+/* Estilo para o polegar da barra de rolagem */
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgb(232, 247, 23); /* cor do polegar */
+    border-radius: 10px; /* bordas arredondadas */
+    
+}
+
+
+form .btn-submit{
+
+    margin-top: 13px;
+    text-align: center;
+    color: black;
+    
+}
+
+
+form .btn-submit input{
+
+    width: 200px;
+    background-color: rgb(232, 247, 23);
+    color: black;
+    padding: 10px 10px;
+    height: 70px;
+    cursor: pointer;
+    
+}
+
+form .btn-submit input:hover {
+    background-color: rgb(63, 63, 63);
+    color: white;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+
+select{
+
+    width: 100%;
+    background-color: rgb(63, 63, 63);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    font-size: 15px;
+    color: rgb(232, 247, 23);
+    
+}
+
+/*resposive*/
+section.form {
+    padding: 20px 10%;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.interface h2 {
+    font-size: 30px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+form textarea {
+    height: 80px;
+}
+
+form .btn-submit input {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    section.form {
+        padding: 20px 5%;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    form input, form select, form textarea {
+        font-size: 14px;
+    }
+
+    form .btn-submit input {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    form input, form select, form textarea {
+        font-size: 12px;
+    }
+
+    form .btn-submit input {
+        font-size: 12px;
+    }
+}
+
+/*popup*/
+
+/* Adicione ao seu arquivo contactus.css */
+/* Adicione ao seu arquivo contactus.css */
+.hidden {
+    display: none;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.719); /* Black w/ opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .tks-content {
+    background-color: #fefefecc;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 500px;
+    border-radius: 18px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal .close-btn {
+    color: #b60404;
+    float: right;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal .close-btn:hover,
+.modal .close-btn:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.modal .tks-content p{
+
+color: rgb(0, 0, 0);
+font-size: 14px;
+}
